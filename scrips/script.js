@@ -1,5 +1,5 @@
 'use strict';
-import { kim } from './lectures.js';
+import { lectures,  } from './lectures.js';
 
-l(kim);
 
+kim.greeting()
