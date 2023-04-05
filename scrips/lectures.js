@@ -16,7 +16,7 @@ window.Person = function (props) {
 
 
 Person.prototype.pay = function () {
- l(`${this.fName} is payed an Hourly  rate${this.hourlyWage}!!!`)
+ l(`${this.fName} is payed an Hourly  rate ${this.hourlyWage}!!!`)
   
 };
 
@@ -43,10 +43,10 @@ const arr1 = new Array(1, 2, 3, 3, 3, 3, 4)
 // l(arr1.__proto__.__proto__)
 /////////////////////////////////////////////////////////////////////////////////////////
 
-const H1 = document.querySelector('h1');
+// const H1 = document.querySelector('h1');
 
 // d(H1.__proto__.__proto__.__proto__)
-d(()=>1+1)
+// d(()=>1+1)
 /////////////////////////////////////////////////////////////////////////////////////////
 const lectures = 'lectures';
 export { lectures };

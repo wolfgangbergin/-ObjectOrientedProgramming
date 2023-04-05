@@ -46,3 +46,5 @@
 
 // wolf.pay()
 //l(wolf.__proto__ === Wolfgang.prototype)
+
+//Object.setPrototypeOf(wolfMan, new Person(wolfgang));
