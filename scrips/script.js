@@ -30,6 +30,7 @@ const wolfMan = new Employee(wolfgang);
 // wolfMan.pay();
 // wolfMan.calcAge();
 // wolfMan.test717();
+
 /////////////////////////////////////////////////////////////////////////////////////////
 const kimberly = {
   fName: 'kimy',
@@ -43,16 +44,18 @@ const Manager = function (props) {
   this.job = props.job;
   this.hourlyWage = props.hourlyWage;
   this.sub = props.sub;
-
-  //this.__proto__ = new Employee(props);
+//   this.payEmployee = function(){
+//         l(`${this.fName} is paying ${this.sub.fName} ${this.sub.hourlyWage} an hour!!!`)
+//       }
+  this.__proto__ = new Employee(props);
 Object.setPrototypeOf(this, new Employee(props));
 };
 
 //Manager.prototype =  new Employee(kimberly);
 //Manager.prototype.constructor =  new Employee(kimberly);
-Manager.prototype.payEmployee = function(){
-    l(`${this.fName} is paying ${this.sub.fName} ${this.sub.hourlyWage} an hour!!!`)
-  }
+// Manager.prototype.payEmployee = function(){
+//     l(`${this.fName} is paying ${this.sub.fName} ${this.sub.hourlyWage} an hour!!!`)
+//   }
 const kim = new Manager(kimberly)
 
 l(kim.__proto__)
