@@ -1,4 +1,5 @@
 'use strict';
+/////////////////////////////////////////////////////////////////////////////////////////
 import { lectures } from './lectures.js';
 const wolfgang = {
   fName: 'Wolfgang',
@@ -26,10 +27,10 @@ const wolfMan = new Employee(wolfgang);
 
 // Object.setPrototypeOf(wolfMan, new Person(wolfgang));
 
-// l(wolfMan);
-// wolfMan.pay();
-// wolfMan.calcAge();
-// wolfMan.test717();
+l(wolfMan);
+wolfMan.pay();
+wolfMan.calcAge();
+wolfMan.test717();
 
 /////////////////////////////////////////////////////////////////////////////////////////
 const kimberly = {
@@ -60,7 +61,9 @@ const kim = new Manager(kimberly)
 
 l(kim.__proto__)
 
-
+kim.__proto__.payEmployee = function(){
+  l(`${this.fName} is paying ${this.sub.fName} ${this.sub.hourlyWage} an hour!!!`)
+}
 kim.calcAge();
 kim.test717();
 

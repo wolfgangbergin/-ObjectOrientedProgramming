@@ -1,4 +1,5 @@
 'use strict';
+/////////////////////////////////////////////////////////////////////////////////////////
 Array.prototype.unique = function (param1) {
     
 
@@ -27,9 +28,7 @@ Person.prototype.calcAge = function () {
 
 
 let jojo = new Person({ fName: 'jojo', bYear: '1899' });
-Person.prototype.payEmployee = function(){
-    l(`${this.fName} is paying ${this.sub.fName} ${this.sub.hourlyWage} an hour!!!`)
-  }
+
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
