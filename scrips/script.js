@@ -22,7 +22,7 @@ const Employee = function (props) {
 const wolfMan = new Employee(wolfgang);
  
 
-
+l('wolfMan', wolfMan)
 
 //  l(wolfMan);
 // wolfMan.pay();
