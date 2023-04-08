@@ -1,3 +1,5 @@
+
+
 // l(jojo.__proto__ === Person.prototype )
 // l(Person.prototype.isPrototypeOf(jojo) )
 // l(Function.prototype.isPrototypeOf(Person) )
