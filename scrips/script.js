@@ -1,5 +1,7 @@
 'use strict';
 import { lectures } from './lectures.js';
+import { challenge2 } from './challenge2.js';
+
 /////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -19,19 +21,22 @@ import { lectures } from './lectures.js';
 // l(account.latest);
 /////////////////////////////////////////////////////////////////////////////////////////
 const PersonProto = {
-  testCCC: 'test',
+  
   calcAge() {
     l(2023 - this.bYear)
     
   },
-  init(fName, bYear){
+  init(fName, bYear, zip){
     this.fName = fName;
     this.bYear = bYear;
-    this.test = this._notStatic
+    this.notStatic = zip;
   },
   set notStatic(param1){
-    PersonProto._notStatic = param1
+    this._notStatic = param1
   },
+  get notStatic(){
+    return this._notStatic
+  }
  
 };
 
@@ -39,15 +44,20 @@ const PersonProto = {
 
 steven.name = 'steven';
 steven.bYear = 1975;
-//steven.__proto__ = PersonProto
-// steven.calcAge()
-// l(steven.__proto__ === PersonProto)
+steven.__proto__ = PersonProto
+//steven.calcAge()
+
 const sarah = {}
 sarah.__proto__ = PersonProto
-//const sarah = Object.create(PersonProto);  
-sarah.notStatic = '55555'
- l(PersonProto)
- sarah.init('sarah', 1979)
-// sarah.calcAge()
-l(sarah)
+// const sarah = Object.create(PersonProto);  
+
+
+ sarah.init('sarah', 1979, 33133)
+
+
+// l(sarah.notStatic)
+// sarah.notStatic = 55655
+// l(sarah.notStatic)
+/////////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////////
