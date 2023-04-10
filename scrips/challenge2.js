@@ -41,8 +41,14 @@ class CarClass {
     
   }
 
-  static kimTest(param1){
-    return this
+  static kimTest1(param1){
+    if(param1){
+        
+        this.speedUK = param1
+    }else if(!param1){
+        return this.speedUK
+
+    }
   }
 }
 
@@ -54,17 +60,21 @@ CarClass.wolf777 = '777';
 
 let ford = new CarClass({ make: 'ford', speedUK: 120, owner: 'wolf ' });
 
- BMW.speedUS = 100;
- BMW.speedUK = 1000
-BMW.accelerate()
-BMW.brake()
-l(BMW.speedUK)
-l(BMW.speedUS)
+//  BMW.speedUS = 100;
+//  BMW.speedUK = 1000
+// BMW.accelerate()
+// BMW.brake()
+// l(BMW.speedUK)
+// l(BMW.speedUS)
 
 
- l(BMW)
-// l(CarClass.kimTest())
-// let temp = CarClass.kimTest
-// l(temp.call(BMW))
+
+BMW.banana = CarClass.kimTest1
+
+
+BMW.banana(3999)
+l(BMW)
+l(BMW.banana())
+
 
 export const challenge2 = 'challenge2';
