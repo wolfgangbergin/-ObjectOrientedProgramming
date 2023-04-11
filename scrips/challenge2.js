@@ -1,20 +1,19 @@
 'use strict';
 
-Function.prototype.wolfTest = function(){
-  l(this)
-return this()
-}
 
-let fla =  function(){
-  l('fla')
-}
-// fla.wolfTest()
+Function.prototype.CCC = 'CCC313'
+
+
+
 class CarClass {
+  
   constructor(props) {
     this.make = props.make;
     this.speedUK = props.speedUK;
     this.owner = props.owner;
-  }
+  
+  };
+  
   accelerate() {
     this.speedUK = this.speedUK + 10;
 
@@ -60,7 +59,10 @@ class CarClass {
     }
   }
 }
-
+// l(CarClass.__proto__)
+// l(CarClass.prototype)
+Object.setPrototypeOf(CarClass.prototype, CarClass.__proto__)
+//CarClass.prototype.wolfTest = CarClass.__proto__.wolfTest
 CarClass.wolf777 = '777';
 
  let BMW = new CarClass({make: 'BMW', speedUK: 120, owner: 'kim '})
@@ -70,5 +72,13 @@ CarClass.wolf777 = '777';
 let ford = new CarClass({ make: 'ford', speedUK: 120, owner: 'wolf ' });
 
 
+let CCC = new Number(313)
+ 
+ford.CCC = CCC
+ford.jojoTest1 = new Function('return 1+8')
 
+// ford.wolfTest()
+//  ford.jojoTest1.wolfTest()
+
+l(BMW.getwolfThis())
 export const challenge2 = 'challenge2';

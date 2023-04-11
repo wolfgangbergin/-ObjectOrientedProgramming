@@ -4,3 +4,6 @@
 // l(document);
 window.l = console.log;
 window.__proto__.d = console.dir;
+Function.prototype.getwolfThis = (function () {
+  return this;
+})
