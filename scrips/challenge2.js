@@ -1,5 +1,14 @@
 'use strict';
 
+Function.prototype.wolfTest = function(){
+  l(this)
+return this()
+}
+
+let fla =  function(){
+  l('fla')
+}
+// fla.wolfTest()
 class CarClass {
   constructor(props) {
     this.make = props.make;
@@ -60,21 +69,6 @@ CarClass.wolf777 = '777';
 
 let ford = new CarClass({ make: 'ford', speedUK: 120, owner: 'wolf ' });
 
-//  BMW.speedUS = 100;
-//  BMW.speedUK = 1000
-// BMW.accelerate()
-// BMW.brake()
-// l(BMW.speedUK)
-// l(BMW.speedUS)
-
-
-
-BMW.banana = CarClass.kimTest1
-
-
-BMW.banana(3999)
-l(BMW)
-l(BMW.banana())
 
 
 export const challenge2 = 'challenge2';
