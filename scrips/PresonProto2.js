@@ -8,12 +8,20 @@ let wolf = { fName: 'wolfgang', bYear: '1999', computer: 'mac book' }
 let Student = function(props){
     Person.call(this, props)
     this.computer  = `${props.computer} pro!`
-    //Object.setPrototypeOf(this, new Person(props))
+    
+   Object.setPrototypeOf(Student.prototype, Person.prototype)
+
+// Student.prototype = Object.create(Person.prototype)
+//  l(Student.prototype)
+// Student.prototype.constructor = Student;
 };
 
 
 
- Student.prototype = Object.create(Person.prototype)
+
+// l(`///////////////////////////////////////////////`)
+
+ //Student.prototype = Object.create(Person.prototype)
 Student.prototype.constructor = Student;
 
 Student.prototype.introduce = function(){
@@ -29,10 +37,13 @@ Object.defineProperty(window.Person.prototype, "testWolf", {
 })
 
 let wolfgang = new Student(wolf)
-d(wolfgang)
+// d(wolfgang)
 
-
+// l(wolfgang.__proto__ === Student.prototype)
 // d(Student.prototype.constructor)
 // d(Student.prototype)
+// wolfgang.introduce()
+// wolfgang.calcAge()
 
-export {wolfgang}
+
+export {wolfgang, Student}

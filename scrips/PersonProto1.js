@@ -14,7 +14,8 @@ window.Person = function (props) {
   
   Person.prototype.calcAge = function () {
      
-    l(`HI I'M ${this.fName} and I am ${2023 - +`${this.bYear}`} years old and i use a ${this.computer}`);
+    l(`HI I'M ${this.fName} and I am ${2023 - +`${this.bYear}`} years old and i use a ${this.computer} 
+    and i have a ${this.GPA} GPA!`);
   };
   
 
