@@ -77,9 +77,7 @@ let CCC = new Number(313)
 ford.CCC = CCC
 ford.jojoTest1 = new Function('return 1+8')
 
-// ford.wolfTest()
-//  ford.jojoTest1.wolfTest()
+
 BMW.wolf = '131313'
-l(BMW.wolf)
-l(BMW.wolfThis)
+
 export const challenge2 = 'challenge2';
