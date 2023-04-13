@@ -1,5 +1,7 @@
 "use strict";
 import banana from "./PersonProto1.js";
+
+
 let wolf = { fName: 'wolfgang', bYear: '1999', computer: 'mac book' }
 
 
@@ -37,13 +39,7 @@ Object.defineProperty(window.Person.prototype, "testWolf", {
 })
 
 let wolfgang = new Student(wolf)
-// d(wolfgang)
 
-// l(wolfgang.__proto__ === Student.prototype)
-// d(Student.prototype.constructor)
-// d(Student.prototype)
-// wolfgang.introduce()
-// wolfgang.calcAge()
 
 
 export {wolfgang, Student}

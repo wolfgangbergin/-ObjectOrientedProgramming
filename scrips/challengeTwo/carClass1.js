@@ -5,7 +5,7 @@ Function.prototype.CCC = 'CCC313'
 
 
 
-class CarClass {
+class CarClass1 {
   
   constructor(props) {
     this.make = props.make;
@@ -24,7 +24,7 @@ class CarClass {
     l(`${this.speedUS} mph / ${this.speedUK} km/h`);
   }
   set owner(param1) {
-    this._owner = `${param1} ${CarClass.wolf777} `;
+    this._owner = `${param1} ${CarClass1.wolf777} `;
   }
   get owner() {
     return this._owner;
@@ -59,17 +59,17 @@ class CarClass {
     }
   }
 }
-// l(CarClass.__proto__)
-// l(CarClass.prototype)
-Object.setPrototypeOf(CarClass.prototype, CarClass.__proto__)
-//CarClass.prototype.wolfTest = CarClass.__proto__.wolfTest
-CarClass.wolf777 = '777';
+// l(CarClass1.__proto__)
+// l(CarClass1.prototype)
+Object.setPrototypeOf(CarClass1.prototype, CarClass1.__proto__)
+//CarClass1.prototype.wolfTest = CarClass1.__proto__.wolfTest
+CarClass1.wolf777 = '777';
 
- let BMW = new CarClass({make: 'BMW', speedUK: 120, owner: 'kim '})
+ let BMW = new CarClass1({make: 'BMW', speedUK: 120, owner: 'kim '})
 
-// let Mercedes = new CarClass({make: 'Mercedes', speedUK: 80, owner: 'jojo'})
+// let Mercedes = new CarClass1({make: 'Mercedes', speedUK: 80, owner: 'jojo'})
 
-let ford = new CarClass({ make: 'ford', speedUK: 120, owner: 'wolf ' });
+let ford = new CarClass1({ make: 'ford', speedUK: 120, owner: 'wolf ' });
 
 
 let CCC = new Number(313)
@@ -79,5 +79,5 @@ ford.jojoTest1 = new Function('return 1+8')
 
 
 BMW.wolf = '131313'
-
-export const challenge2 = 'challenge2';
+const challenge2 = 'challenge2';
+export {challenge2, CarClass1}
