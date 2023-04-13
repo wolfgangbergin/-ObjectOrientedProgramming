@@ -1,43 +1,83 @@
 'use strict';
 import { Car } from './CarProto1.js';
-
+import { CarClass1 } from './challengeTwo/carClass1.js';
 
 const pickup = {
-  make: 'Tesla',
-  speed: 100,
+  make: 'Ford',
+  speedUK: 100,
   charge: 0,
+  parent: Car,
 };
+const Tesla = {
+  make: 'Tesla',
+  speedUK: 0,
+  charge: 0,
+  owner: 'Kim',
+  parent: CarClass1,
+};
+
 function Ev(props) {
-  Car.call(this, props);
+  this.temp = new props.parent(props);
+
+ for (const [key, val ] of Object.entries(this.temp) ) {
+//    l(key, val)
+   this[key] = val
+
+ }
+  //   props.parent.call(this, props);
   this.charge = props.charge;
+  this.brake = function() {
+    this.speedUK -= 20;
+    this.charge++;
+    l( `${this.make} going at ${this.speedUK} km/h with a charge of ${this.charge}%.`)
+
+  } 
+  Object.setPrototypeOf(Ev.prototype, props.parent.prototype);
 }
 
-
-Object.setPrototypeOf(Ev.prototype, Car.prototype)
 // Ev.prototype = Object.create(Car.prototype);
 // Ev.prototype.constructor = Ev;
+Object.defineProperty(Ev.prototype, 'charge', {
+    get: function () {
+        return this._charge
+    },
+    set: function (param1) {
+        this._charge = param1
+    }
+})  
 
-Ev.prototype.chargeBattery = function (param1) {
-  this.charge = param1;
-};
+
+// Ev.prototype.charge = function (param1) {
+//   this.charge = param1;
+// };
 Ev.prototype.accelerate = function (param1) {
-  this.speed += 20;
+  this.speedUK += 20;
   this.charge--;
   l(
-    `${this.make} going at ${this.speed} km/h with a charge of ${this.charge}%.`
+    `${this.make} going at ${this.speedUK} km/h with a charge of ${this.charge}%.`
   );
 };
 
+// Ev.prototype.brake = function (param1) {
+//     this.speedUK -= 20;
+//     this.charge++;
+//     l( `${this.make} going at ${this.speedUK} km/h with a charge of ${this.charge}%.`)
+//     };
 // let wolfsTesla = new Ev(pickup);
 
-// wolfsTesla.chargeBattery(100);
+l(`///////////////////////////////////////////////`);
+let kimsTesla = new Ev(Tesla);
+kimsTesla.charge = 23;
+kimsTesla.accelerate();
+kimsTesla.accelerate();
+kimsTesla.accelerate();
+kimsTesla.accelerate();
+kimsTesla.brake();
+kimsTesla.brake();
+kimsTesla.brake();
 
-// wolfsTesla.accelerate();
-// wolfsTesla.accelerate();
+l(kimsTesla);
+l(Ev)
+const wolfMan = 'wolfMan'
 
-// wolfsTesla.break();
-// l(wolfsTesla.__proto__.__proto__.__proto__.__proto__);
-// l(wolfsTesla);
-
-
-export { wolfsTesla };
+export { wolfMan };

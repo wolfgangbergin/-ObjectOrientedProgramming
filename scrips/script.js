@@ -3,7 +3,7 @@ import { lectures } from './lectures.js';
 import { challenge2 } from './challengeTwo/carClass1.js';
 import { wolfgang } from './PresonProto2.js';
  import { kimp } from './PersonProto3.js';
- import { wolfsTesla } from './CarProto2.js';
+  import { wolfMan } from './CarProto2.js';
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
