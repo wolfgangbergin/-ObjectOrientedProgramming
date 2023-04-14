@@ -27,4 +27,5 @@ let kimp = new PassingStudent(kim)
 // l(kimp)
 
 
+
 export {kimp}

@@ -1,6 +1,7 @@
 'use strict';
 import { Car } from './CarProto1.js';
-import { CarClass1 } from './challengeTwo/carClass1.js';
+ import { CarClass1 } from '../challengeTwo/carClass1.js';
+
 
 const pickup = {
   make: 'Ford',
