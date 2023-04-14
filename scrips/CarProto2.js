@@ -65,19 +65,9 @@ Ev.prototype.accelerate = function (param1) {
 //     };
 // let wolfsTesla = new Ev(pickup);
 
-l(`///////////////////////////////////////////////`);
-let kimsTesla = new Ev(Tesla);
-kimsTesla.charge = 23;
-kimsTesla.accelerate();
-kimsTesla.accelerate();
-kimsTesla.accelerate();
-kimsTesla.accelerate();
-kimsTesla.brake();
-kimsTesla.brake();
-kimsTesla.brake();
 
-l(kimsTesla);
-l(Ev)
+let kimsTesla = new Ev(Tesla);
+
 const wolfMan = 'wolfMan'
 
 export { wolfMan };

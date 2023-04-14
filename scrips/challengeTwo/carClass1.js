@@ -1,7 +1,7 @@
 'use strict';
 
 
-Function.prototype.CCC = 'CCC313'
+
 
 
 
