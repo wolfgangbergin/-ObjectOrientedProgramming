@@ -24,8 +24,8 @@ PassingStudent.prototype.logGAP = function(){
 let kimp = new PassingStudent(kim)
 
 
-// l(kimp)
-
+//  l(kimp)
+//  kimp.introduce()
 
 
 export {kimp}
