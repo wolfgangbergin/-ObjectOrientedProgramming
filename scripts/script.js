@@ -8,8 +8,8 @@ import { fla } from './personClass/PersonClass1.js';
 import { jojo } from './personClass/PersonClass2.js';
 import { michigan } from './objectCreate/objectCreate1.js';
 import { co } from './objectCreate/oblectCreate2.js';
-import { seventySeven } from './objectCreate/objectCreate3.js';
-
+import {scripts} from './objectCreate/objectCreate3.js'
+ l(scripts)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////

@@ -35,5 +35,5 @@ kimy.sound = 'mewmy414'
 
 kimy.makeSound()
 
-const seventySeven = 77
-export {seventySeven}
+const scripts = {scripting: 'script'}
+export {scripts}
