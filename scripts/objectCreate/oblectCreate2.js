@@ -5,11 +5,15 @@ import { wolf } from "./objectCreate1.js";
 
 const student = Object.create(wolf.personCreate)
 
-student.init = function(props){
+student.initStudent = function(props){
    
-   wolf.personCreate.init.call(this, props)
+    this.initPersonCreate.call(this, props)
     this.computer = props.computer
 
+}
+
+student.intro = function(){
+    l(`im ${this.firstName} and my sound is ${this.sound}`)
 }
 
 Object.defineProperty(student, 'computer', {
@@ -21,13 +25,7 @@ Object.defineProperty(student, 'computer', {
     }
 })
 
-const mick = Object.create(student)
 
-mick.init(micky)
-
-// l(mick)
-// mick.computer = 'windows98'
-// l(mick.computer)
 let co = 'co'
 
-export {co}
+export { student}

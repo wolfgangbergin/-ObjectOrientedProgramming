@@ -1,28 +1,32 @@
 
 'use strict'
 
+
 const cat = {
+   
+    add(param1){
+        this[`_${param1}`] = param1
+        return this
+    },
+
+    initCat(props){
+        
+       this.initStudent.call(this, props)
+        this.sound = props.sound
+        
+        return this
+    },
+
     makeSound(){
         l(this.sound)
     }
 }
-// const wolf = Object.create(cat)
-// wolf.sound = 'woof313'
-// wolf.makeSound()
 
 
 
-// const waffle = Object.create(cat)
-// waffle.sound = 'waff'
-// waffle.makeSound()
-
-// const mark = {sound: 'mooyah'}
-// Object.setPrototypeOf(mark, cat)
-// mark.makeSound()
-
-
-Object.wolfCreat = function(obj){
+Object.wolfCreate = function(obj){
     let temp = {}
+ 
     Object.setPrototypeOf(temp, obj)
    
     return temp
@@ -30,10 +34,9 @@ Object.wolfCreat = function(obj){
 
 }
 
-const kimy = Object.wolfCreat(cat)
-kimy.sound = 'mewmy414'
 
-kimy.makeSound()
 
-const scripts = {scripting: 'script'}
-export {scripts}
+
+
+
+export {cat}

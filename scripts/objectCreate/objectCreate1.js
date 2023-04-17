@@ -6,7 +6,7 @@ const personCreate = {
     calcAge(){
         l(`${2023 - +this.bYear}`)
     },
-    init(props){
+    initPersonCreate(props){
      
         this.firstName = props.firstName,
         this.bYear = props.bYear,
