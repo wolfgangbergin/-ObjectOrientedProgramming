@@ -11,7 +11,7 @@ let Student = function(props){
     Person.call(this, props)
     this.computer  = `${props.computer} pro!`
     
-   Object.setPrototypeOf(Student.prototype, Person.prototype)
+   // Object.setPrototypeOf(Student.prototype, Person.prototype)
 
 // Student.prototype = Object.create(Person.prototype)
 //  l(Student.prototype)
@@ -23,7 +23,7 @@ let Student = function(props){
 
 // l(`///////////////////////////////////////////////`)
 
- //Student.prototype = Object.create(Person.prototype)
+Student.prototype = Object.create(Person.prototype)
 Student.prototype.constructor = Student;
 
 Student.prototype.introduce = function(){

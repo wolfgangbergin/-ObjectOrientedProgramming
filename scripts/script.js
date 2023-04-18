@@ -9,6 +9,8 @@ import { jojo } from './personClass/PersonClass2.js';
 import { michigan } from './objectCreate/objectCreate1.js';
 import { annArbor } from './objectCreate/objectCreate3.js';
 import { scripting } from './lectures/lectures2.js';
-
-
+import { script } from './bankApp/bankApp1.js';
+import {scripts} from './ed/ed10.js'
 /////////////////////////////////////////////////////////////////////////////////////////
+
+l(scripts)

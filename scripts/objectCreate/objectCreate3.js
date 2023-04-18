@@ -33,8 +33,7 @@ kimsCat.initCat({sound: 'lollol',  firstName: 'scripts', computer: 'windows3.1',
 
 
 
-
-// l(kimsCat)
+//l(kimsCat)
 // kimsCat.makeSound()
 // kimsCat.intro()
 // kimsCat.calcAge()

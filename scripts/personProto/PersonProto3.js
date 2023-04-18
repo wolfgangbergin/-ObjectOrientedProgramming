@@ -26,6 +26,6 @@ let kimp = new PassingStudent(kim)
 
 //  l(kimp)
 //  kimp.introduce()
-
+//  kimp.calcAge()
 
 export {kimp}
