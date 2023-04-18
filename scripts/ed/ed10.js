@@ -1,11 +1,19 @@
 'use strict'
 
 
-const creditAcc = function(props){
-    this.interestRate = creditAcc.creditCardIntrest
+const CreditAcc = function(props){
+    this.banana = 'banana'
+    this.firstName = props.firstName
+    this.interestRate = CreditAcc.creditCardIntrest
+    this.testFun313 = function(){
+        l('testFunc313')
+    }
 }
 
-Object.defineProperty(creditAcc, 'creditCardIntrest', {
+
+
+
+Object.defineProperty(CreditAcc, 'creditCardIntrest', {
    get: function(){
         return this._creditCardIntrest
     },
@@ -16,7 +24,7 @@ Object.defineProperty(creditAcc, 'creditCardIntrest', {
 
 
 
-Object.defineProperty(creditAcc.prototype, 'interestRate', {
+Object.defineProperty(CreditAcc.prototype, 'interestRate', {
     get: function (){
         return this._interestRate
     },
@@ -25,7 +33,7 @@ Object.defineProperty(creditAcc.prototype, 'interestRate', {
     }
 })
 
-Object.defineProperty(creditAcc.prototype, 'creditCard', {
+Object.defineProperty(CreditAcc.prototype, 'creditCard', {
     get: function (){
         return this._creditCard
     },
@@ -35,18 +43,18 @@ Object.defineProperty(creditAcc.prototype, 'creditCard', {
 })
 
 
-creditAcc.creditCardIntrest = .33
+CreditAcc.creditCardIntrest = .33
 
+CreditAcc.prototype.prototype = Object.create({})
 
-
-let ed = new creditAcc({banana: 'banana'})
+let ed = new CreditAcc({banana: 'banana', firstName: 'Ed'})
 
 
 ed.creditCard = [212]
 
-l(ed)
 
 
+ d(ed)
 
 
 
