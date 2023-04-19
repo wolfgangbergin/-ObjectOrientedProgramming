@@ -68,7 +68,7 @@ Ev.prototype.accelerate = function (param1) {
 
 
 let kimsTesla = new Ev(Tesla);
-l(kimsTesla)
+// l(kimsTesla)
 const wolfMan = 'wolfMan'
 
 export { wolfMan };
