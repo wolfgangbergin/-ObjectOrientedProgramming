@@ -20,11 +20,11 @@ const Tesla = {
 function Ev(props) {
   this.temp = new props.parent(props);
 
- for (const [key, val ] of Object.entries(this.temp) ) {
-//    l(key, val)
-   this[key] = val
+//  for (const [key, val ] of Object.entries(this.temp) ) {
+// //    l(key, val)
+//    this[key] = val
 
- }
+//  }
   //   props.parent.call(this, props);
   this.charge = props.charge;
   this.brake = function() {
@@ -68,7 +68,7 @@ Ev.prototype.accelerate = function (param1) {
 
 
 let kimsTesla = new Ev(Tesla);
-
+l(kimsTesla)
 const wolfMan = 'wolfMan'
 
 export { wolfMan };

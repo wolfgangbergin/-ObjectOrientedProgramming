@@ -27,9 +27,11 @@ class Account {
     return true;
   }
   requestLoan(val){
+   
     if(this.approveLoan() ){
+      l(`your loan of ${val} was approved!!!`)
         this.deposit(val)
-        l(`your loan of ${val} was approved!!!`)
+    
     }
    
   }
