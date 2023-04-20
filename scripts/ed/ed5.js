@@ -4,7 +4,7 @@ class Account {
   //public
   locale = navigator.language;
   _city = `annArbor`
-  static AAAtest3 = 'test3'
+ 
   //privit
   #movements = [];
  #pin
@@ -16,7 +16,7 @@ class Account {
       // this.#movements = [];
       (this.wolfTest = this.locale),
       (this.city = props.city);
-      //Account.#AAAtest1('staticTest1')
+      Account.#AAAtest1('staticTest1')
       
   }
 
@@ -82,7 +82,8 @@ wolfg.withdraw(919);
 // wolfg.requestLoan('919')
 
 
-// Account.AAAtest2('staticTest2')
-// d(Account)
-const script = 'script';
-export { script, Account };
+Account.AAAtest2('staticTest2')
+
+
+const script = ['script', 'scrips', `scripting`]
+export default script

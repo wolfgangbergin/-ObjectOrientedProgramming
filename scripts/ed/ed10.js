@@ -4,14 +4,16 @@ import { Account } from '../bankApp/bankApp1.js';
 import {Customer} from './ed9.js'
 
 const CreditAcc = function (props) {
-    Customer.call(this, props)
+  
+     Customer.call(this, props, CreditAcc)
 
 
  
   this.interestRate = CreditAcc.creditCardIntrest;
  
- Object
+
 };
+
 
 // CreditAcc.prototype = Object.create(Customer.prototype)
 // CreditAcc.prototype.constructor = CreditAcc
@@ -55,7 +57,7 @@ let ed = new CreditAcc({
 });
 
 ed.creditCard = [212];
-d(ed);
+// d(ed);
 
 
 const scripts = `scripts`;
