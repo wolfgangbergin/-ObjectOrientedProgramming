@@ -16,7 +16,7 @@ class Account {
       // this.#movements = [];
       (this.wolfTest = this.locale),
       (this.city = props.city);
-      Account.#AAAtest1('staticTest1')
+     //– Account.#AAAtest1('staticTest1')
       
   }
 
@@ -28,18 +28,19 @@ class Account {
   }
 
  
-  requestLoan(val) {
-    if (this.#approveLoan()) {
-      l(`your loan of ${val} was approved!!!`);
+  requestLoan(val, param2) {
+    
+    if (this.#approveLoan(param2)) {
+      l(`your loan of ${val} was approved.`);
       this.deposit(val);
+      return
     }
+    l(`your loan of ${val} was Denied :-(!!!`);
   }
  static #AAAtest1(param1) {
      l(param1);
   }
- static AAAtest2(param1) {
-     l(param1);
-  }
+ 
   getMovements(){
     return this.#movements
   }
@@ -51,8 +52,8 @@ class Account {
   // }
 
   #approveLoan(val) {
-    l('approveLone')
-    return true;
+   
+    return val;
   }
 
 }
@@ -73,16 +74,11 @@ let wolfg = new Account({
 wolfg.deposit(919);
 wolfg.withdraw(919);
 
-//l(wolfg.#movements);
-// d(wolfg.city);
-// l(wolfg._city);
- //d(wolfg)
-// l(wolfg.getMovements())
-// l(wolfg.pin)
-// wolfg.requestLoan('919')
+
+wolfg.requestLoan('717', 0.1)
 
 
-Account.AAAtest2('staticTest2')
+l(wolfg.getMovements())
 
 
 const script = ['script', 'scrips', `scripting`]
