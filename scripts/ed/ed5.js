@@ -3,21 +3,24 @@
 class Account {
   //public
   locale = navigator.language;
-  _city = `annArbor`
  
+
   //privit
   #movements = [];
- #pin
+  #pin;
+  static #privateStaticFieldWithInitializer = 'detroit';
+  static #count = 0;
+
   constructor(props) {
     (this.owner = props.owner),
       (this.currency = props.currency),
       (this.#pin = props.pin),
       // this.locale = navigator.language;
       // this.#movements = [];
-      (this.wolfTest = this.locale),
-      (this.city = props.city);
-     //– Account.#AAAtest1('staticTest1')
-      
+      (this.wolfTest = this.locale);
+   
+    //– Account.#AAAtest1('staticTest1')
+  
   }
 
   deposit(val) {
@@ -27,42 +30,53 @@ class Account {
     this.deposit(-val);
   }
 
- 
   requestLoan(val, param2) {
-    
-    if (this.#approveLoan(param2)) {
-      l(`your loan of ${val} was approved.`);
-      this.deposit(val);
-      return
-    }
-    l(`your loan of ${val} was Denied :-(!!!`);
+    if (!this.#approveLoan(param2)) return;
+
+    l(`your loan of ${val} was approved.`);
+    this.deposit(val);
   }
- static #AAAtest1(param1) {
-     l(param1);
+  static #AAAtest1(param1) {
+    l(param1);
   }
- 
-  getMovements(){
-    return this.#movements
+
+  getMovements() {
+    return this.#movements;
   }
-  get pin(){
-    return this.#pin
+  get pin() {
+    return this.#pin;
   }
-  // set pin(param1){
-  //   this.#pin = param1
-  // }
+  set pin(param1){
+    this.#pin = param1
+  }
 
   #approveLoan(val) {
-   
-    return val;
+    l(val);
+    if (!val) return l(`your loan of ${val} was Denied :-(!!!`);
+
+    return true;
+  }
+  static get City(){
+    return Account.#privateStaticFieldWithInitializer
+  } 
+
+  static  set City(param1){
+
+    Account.#privateStaticFieldWithInitializer = param1
   }
 
+  static get count3(){
+    return Account.#count
+  } 
+
+  static   count2(param1){
+
+    Account.#count++
+    return Account
+  }
 }
 
-// Object.defineProperty(Account.prototype, 'movements', {
-//   get: function () {
-//     return this.#movements;
-//   },
-// });
+
 
 let wolfg = new Account({
   owner: 'wolfgang bergin',
@@ -71,15 +85,10 @@ let wolfg = new Account({
   city: 'redford',
 });
 
-wolfg.deposit(919);
-wolfg.withdraw(919);
+Account.count2().count2().count2().count2().count2().count2().count2().count2()
+l(Account.count3)
 
 
-wolfg.requestLoan('717', 0.1)
 
-
-l(wolfg.getMovements())
-
-
-const script = ['script', 'scrips', `scripting`]
-export default script
+const script = ['script', 'scrips', `scripting`];
+export default script;
