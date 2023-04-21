@@ -1,12 +1,17 @@
 import { wolfsCar } from "./carClass.js";
 
 
-d(wolfsCar)
+
+// l(wolfsCar.cell)
 
 
 
-
-
+// l(wolfsCar.zip)
+// wolfsCar.zip = 54321
+// l(wolfsCar.zip)
+l(`///////////////////////////////////////////////`)
+d(wolfsCar.kimTest1)
+d(wolfsCar.kimTest2)
 
 
 
