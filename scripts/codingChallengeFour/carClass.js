@@ -1,4 +1,4 @@
-import {kimTest1, kimTest2} from './kimTest.js';
+import {kimTest1, } from './kimTest.js';
 class CarClass {
   _cell;
   #zip;
@@ -22,7 +22,7 @@ class CarClass {
 }
 ///////////////////////////////////////////////
 CarClass.prototype.kimTest1 = kimTest1
-CarClass.prototype.kimTest2 = kimTest2
+
 ///////////////////////////////////////////////
 Object.defineProperty(CarClass.prototype, 'brake', {
   value: function (param1) {

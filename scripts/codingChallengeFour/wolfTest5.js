@@ -1,21 +1,8 @@
 import { wolfsCar } from "./carClass.js";
 
-
-
-// l(wolfsCar.cell)
-
-
-
-// l(wolfsCar.zip)
-// wolfsCar.zip = 54321
-// l(wolfsCar.zip)
-l(`///////////////////////////////////////////////`)
+wolfsCar.kimTest1.phone = '313-255-7102'
+l(wolfsCar.kimTest1.phone)
 d(wolfsCar.kimTest1)
-d(wolfsCar.kimTest2)
-
-
-
-
 
 
 const seventySeven = 'seventySeven';
