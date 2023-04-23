@@ -1,14 +1,17 @@
-import {kimTest1, } from './kimTest.js';
+import {scripting } from './cell.js';
+
 class CarClass {
   _cell;
   #zip;
   constructor(props) {
-    (this.make = props.make), (this.speed = props.speed),(this.#zip = props.zip);
+    (this.make = props.make), (this._speed = props.speed),
+    (this.#zip = props.zip), this.cell = props.cell;
   }
 
   accelerate(param1) {
-    this.speed += param1;
-    l(this.speed);
+    this._speed += param1;
+   
+    l(`${this._speed} km/h`);
     return this;
   }
   get zip() {
@@ -21,13 +24,14 @@ class CarClass {
 
 }
 ///////////////////////////////////////////////
-CarClass.prototype.kimTest1 = kimTest1
+//CarClass.prototype.kimTest1 = kimTest1
 
 ///////////////////////////////////////////////
 Object.defineProperty(CarClass.prototype, 'brake', {
   value: function (param1) {
-    this.speed -= param1;
-    l(this.speed);
+    this._speed -= param1;
+   
+    l(`${this._speed} km/h`);
     return this;
   },
   writable: 0,
@@ -47,11 +51,17 @@ Object.defineProperty(CarClass.prototype, 'cell', {
   configurable: false,
 });
 
-const wolfsCar = new CarClass({ make: 'ford', speed: 0, zip: 12345 });
+Object.defineProperty(CarClass.prototype, 'speedUS', {
+  get: function () {
+    return this._speed * 0.621371;
+  },
+  set: function (param1) {
+    this._speed = param1 * 1.60934;
+  },
+  enumerable: false,
+  configurable: false,
+});
 
-//wolfsCar.accelerate(10).accelerate(10).brake(1).brake(1);
-
-wolfsCar.cell = '313-255-7102';
 
 export const static1 = 'static1';
-export { wolfsCar };
+export {  CarClass };

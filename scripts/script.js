@@ -13,7 +13,7 @@ import { script } from './bankApp/bankApp1.js';
 import {scripts} from './ed/ed10.js'
 import banana from './ed/ed5.js'
 import { static1 } from './codingChallengeFour/carClass.js';
-import { seventySeven } from './codingChallengeFour/wolfTest5.js';
+import { seventySeven } from './codingChallengeFour/evClass.js';
 
 
 
