@@ -14,7 +14,7 @@ import {scripts} from './ed/ed10.js'
 import banana from './ed/ed5.js'
 import { static1 } from './codingChallengeFour/carClass.js';
 import { seventySeven } from './codingChallengeFour/evClass.js';
-
+import { scriptSeventySeven } from './phoneProto/phoneProto2.js';
 
 
 /////////////////////////////////////////////////////////////////////////////////////////

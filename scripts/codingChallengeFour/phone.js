@@ -14,6 +14,13 @@ const testPhone = {
 }
 
 
+const jobobsPhone = Object.create(testPhone)
+// Object.setPrototypeOf(jobobsPhone, testPhone )
+jobobsPhone.phoneInit({owner: 'jobob'})
+
+// jobobsPhone.makeCall('313')
+// d(jobobsPhone)
+
 
 
 export {testPhone}

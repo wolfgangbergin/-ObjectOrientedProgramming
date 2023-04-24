@@ -45,12 +45,14 @@ battery: 55, number: '734-748-9107', make: 'ford', speed: 0,
  //kimsCar.accelerate(10).accelerate(10).brake(1).brake(1).brake(1).chargeBattery(100).brake(1).brake(1);
 
 
-kimsCar.cell.makeCall('222').chargeBattery(99).findPhone()
+// kimsCar.cell.makeCall('222').chargeBattery(99).findPhone()
+///////////////////////////////////////////////
+d(kimsCar.cell)
 
-
-kimsCar.speedUS = 100
-d(kimsCar)
-l(kimsCar.speedUS)
+l(`///////////////////////////////////////////////`)
+// kimsCar.speedUS = 100
+// d(kimsCar)
+// l(kimsCar.speedUS)
 
 const seventySeven = 'seventySeven';
 
