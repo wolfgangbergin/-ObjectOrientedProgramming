@@ -47,9 +47,9 @@ battery: 55, number: '734-748-9107', make: 'ford', speed: 0,
 
 // kimsCar.cell.makeCall('222').chargeBattery(99).findPhone()
 ///////////////////////////////////////////////
-d(kimsCar.cell)
+// d(kimsCar.cell)
 
-l(`///////////////////////////////////////////////`)
+// l(`///////////////////////////////////////////////`)
 // kimsCar.speedUS = 100
 // d(kimsCar)
 // l(kimsCar.speedUS)

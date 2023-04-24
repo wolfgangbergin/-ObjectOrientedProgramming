@@ -45,14 +45,14 @@ CellPhone.prototype.charge = function(param1){
 let wolfsPhone = new CellPhone({owner: 'wolfgang', charge: 55})
 
 
- d(wolfsPhone)
+//  d(wolfsPhone)
 
 
-wolfsPhone.findPhone()
-wolfsPhone.charge(55)
-d(wolfsPhone)
+// wolfsPhone.findPhone()
+// wolfsPhone.charge(55)
+// d(wolfsPhone)
 
-l(`///////////////////////////////////////////////`)
+// l(`///////////////////////////////////////////////`)
 
 
 let scriptSeventySeven = 'scriptSeventyseven'
