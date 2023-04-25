@@ -2,6 +2,7 @@ import {Person} from './jobob1.js'
 
 
 
+Person.staticFunc4(707)
 
 
 
@@ -21,12 +22,9 @@ const jobob = new Employee({firstName: 'jobob', payRate: 15})
 
 
 
-
-d(jobob)
-d(jobob.firstName)
-jobob.firstName = "wolfMan"
-d(jobob)
-d(jobob.firstName)
+// l(`///////////////////////////////////////////////`)
+// d(jobob)
+// jobob.testFunc1('apple')
 
 const constructor = 'constructor'
 
