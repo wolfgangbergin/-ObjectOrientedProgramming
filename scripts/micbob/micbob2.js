@@ -5,7 +5,7 @@ const Employee = Object.create(PersonObj, {
     'EmployeeMeth2':{
          value: function(param1){
            Employee.employeeTestProp1 = param1
-            l(param1)
+         
         }
     }
 })

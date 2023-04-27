@@ -17,6 +17,7 @@ import { seventySeven } from './codingChallengeFour/evClass.js';
 import { scriptSeventySeven } from './phoneProto/phoneProto2.js';
 import { constructor } from './jobob/jobob2.js';
 import { scriptingSeventy } from './micbob/micbob3.js';
-
+import apple from "./maxbob/maxbob2.js";
+import static2 from './maxbob/maxbob3.js'
 /////////////////////////////////////////////////////////////////////////////////////////
 
