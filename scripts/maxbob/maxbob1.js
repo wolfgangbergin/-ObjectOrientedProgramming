@@ -1,29 +1,52 @@
+// class agedPerson{
+//  printAge(){
+//   l(this.age)
+//  }
 
-class Person  {
- AAAtestwolf;
-    static #banana;
+// }
+
+function agedPerson(props) {
+  this.age = props.age;
+}
+agedPerson.prototype.printAge = function () {
+  l(this.age);
+};
+
+class Person extends agedPerson {
+  static #wolf;
+
+  constructor(props) {
+    super(props),
+      (this.firstName = props.firstName),
+      (Person.wolf = props.apple),
+      (this.testWolf = Person.#wolf),
   
-    constructor(props){
-        this.firstName = props.firstName,
-        Person.#wolf = props.apple
-        
-        
-    }
-  static get #wolf(){
-   
-    return Person.#banana
+      this.testjobob1 = function()  {
+  
+        l(`testjobob ${this.firstName} ${this.fla}`);
+        l(this)
+     
+      };
   }
-  static set #wolf(param1){
+
+
+  testjobob2 = () => {
   
-     Person.#banana = param1
+    l(`testjobob ${this.firstName} ${this.fla}`);
+    l(this)
+    
+  };
+
+  static get wolf() {
+    return Person.#wolf;
+  }
+  static set wolf(param1) {
+    Person.#wolf = param1;
+  }
+
+  greet() {
+    l(`hi im ${this.firstName}`);
   }
 }
 
-Person.apple =  'apple414'
-
-
-// l(Person)
-//  l(Person.__proto__.isPrototypeOf(Function))
-//  l(Person.__proto__ === Function.prototype)
-
-export {Person}
+export { Person, agedPerson };

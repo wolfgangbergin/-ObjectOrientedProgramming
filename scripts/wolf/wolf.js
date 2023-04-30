@@ -11,7 +11,7 @@ Object.defineProperty(Function.prototype, "wolfThis", {
     }
 });
 
-Object.defineProperty(Function.prototype, "wolf", {
+Object.defineProperty(Object.prototype, "wolf", {
     set: function wolf(param1) {
         this._wolf = param1;
     },
@@ -20,3 +20,21 @@ Object.defineProperty(Function.prototype, "wolf", {
         return  this._wolf
     }
 });
+
+
+
+
+Object.defineProperty(Function.prototype, "jobob", {
+    value: function(){
+        l(this)
+    }
+});
+
+
+
+
+
+
+
+Object.prototype.banana = 'banana777';
+Object.prototype.funcTest = ()=>'jojoj313';

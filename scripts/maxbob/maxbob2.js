@@ -1,4 +1,4 @@
-import { Person } from "./maxbob1.js";
+import { Person, agedPerson } from "./maxbob1.js";
 
 class Employee extends Person{
     constructor(props){
@@ -10,23 +10,28 @@ class Employee extends Person{
 
 
 
-const maxbob = new Employee({firstName: 'maxbob212', pay: 15, apple: 'apple313'})
+const maxbob = new Employee({firstName: 'maxbob212', pay: 15, apple: 'maxbob212', age: 48})
 
 
-l(maxbob.__proto__.__proto__.__proto__ === Object.prototype)
-
-// d(Employee.__proto__.__proto__ === Function.prototype)
-// l(maxbob.__proto__ === Employee.prototype)
-//   l(Object.prototype.isPrototypeOf(maxbob))
-//   d(Employee.__proto__ === Person)
 
 
-//d(Employee.__proto__)
 
-// l(Object.prototype.isPrototypeOf(maxbob))
+ const pp2 = new maxbob.__proto__.constructor({firstName: 'pp2', pay: 15, apple: 'ppp2', age: 18})
 
-// l(`///////////////////////////////////////////////`)
-// l(Employee.__proto__.isPrototypeOf(Person))
+
+
+ //d(maxbob)
+ 
+
+
+
+ const pp3 = { fla: "fla"}
+  pp3.testjobob1 = maxbob.testjobob1
+  pp3.testjobob2 = maxbob.testjobob2
+  
+//   pp3.testjobob1()
+//   pp3.testjobob2()
+ 
 const scripting = 'scripting'
 
 
