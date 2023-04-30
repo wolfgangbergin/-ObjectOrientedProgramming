@@ -20,6 +20,6 @@ import { scriptingSeventy } from './micbob/micbob3.js';
 import apple from "./maxbob/maxbob2.js";
 import static2 from './maxbob/maxbob3.js';
 import scripting4 from './maxjo/maxjo2.js';
-
+import scripting6 from './testThis/testThis1.js';
 /////////////////////////////////////////////////////////////////////////////////////////
 
