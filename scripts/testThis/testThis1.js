@@ -1,18 +1,29 @@
 const kimObject = {
-  firstName: 'kim313',
+  firstName: 'kim248',
   kimFunc1() {
     l(this.firstName);
   },
   kimFunc2() {
     let banana313 = 'banana';
-    (() => {
-      l(banana313);
-    })();
+    
+   return () => {
+      l(this.firstName);
+    };
   },
 };
 
-kimObject.kimFunc1();
-kimObject.kimFunc2();
+const wolfObject = {
+    firstName: 'wolf313',
+    wolfFunc1: kimObject.kimFunc1,
+    wolfFunc2: kimObject.kimFunc2(),
+  
+  };
+
+// kimObject.kimFunc1();
+// kimObject.kimFunc2()();
+
+wolfObject.wolfFunc1();
+wolfObject.wolfFunc2();
 
 const scripting = 'scipts';
 
