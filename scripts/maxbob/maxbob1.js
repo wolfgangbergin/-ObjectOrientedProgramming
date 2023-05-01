@@ -26,11 +26,11 @@ class Person extends agedPerson {
         l(`testjobob ${this.firstName} ${this.fla}`);
         l(this)
      
-      };
+      }.bind(this);
   }
 
 
-  testjobob2 = () => {
+  testjobob2 = ()=>{
   
     l(`testjobob ${this.firstName} ${this.fla}`);
     l(this)
@@ -48,5 +48,8 @@ class Person extends agedPerson {
     l(`hi im ${this.firstName}`);
   }
 }
+
+
+
 
 export { Person, agedPerson };
