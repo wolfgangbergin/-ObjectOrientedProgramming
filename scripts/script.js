@@ -21,5 +21,9 @@ import apple from "./maxbob/maxbob2.js";
 import static2 from './maxbob/maxbob3.js';
 import scripting4 from './maxjo/maxjo2.js';
 import scripting6 from './testThis/testThis1.js';
+import scripting7 from './testThis/testThis2.js';
+import scripting8 from './testThis/testThis3.js';
+import scripting9 from './testThis/testThis4.js';
+
 /////////////////////////////////////////////////////////////////////////////////////////
 
