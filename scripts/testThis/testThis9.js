@@ -27,7 +27,7 @@ const jobob = wolfInitSet([1,2,3,3])
 
 
 
-d(jobob.testkim() )
+// d(jobob.testkim() )
 
 
 const scripting = 'scripting'
