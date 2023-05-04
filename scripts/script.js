@@ -24,6 +24,9 @@ import scripting6 from './testThis/testThis1.js';
 import scripting7 from './testThis/testThis2.js';
 import scripting8 from './testThis/testThis3.js';
 import scripting9 from './testThis/testThis4.js';
+import scripting10 from './testThis/testThis5.js';
+import scripting11 from './testThis/testThis6.js';
+import scripting12 from './testThis/testThis7.js';
 
 /////////////////////////////////////////////////////////////////////////////////////////
 

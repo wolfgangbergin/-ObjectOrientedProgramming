@@ -1,13 +1,43 @@
-// class agedPerson{
-//  printAge(){
-//   l(this.age)
-//  }
 
-// }
+
+const phone = {
+  phoneInit(props){
+     
+      this.phoneNumber = props.phoneNumber
+     this.state = props.state
+  },
+
+  printPhone(){
+      l(this.phoneNumber)
+  },
+
+  kimMetcAAA(){
+    l('kimMeth')
+  }
+
+
+}
+
+
+
+
+
+const testObj = Object.create(phone)
+
+
+
+
+
+
+
 
 function agedPerson(props) {
+  testObj.phoneInit.call(this, props)
   this.age = props.age;
 }
+
+Object.setPrototypeOf(agedPerson.prototype, testObj)
+
 agedPerson.prototype.printAge = function () {
   l(this.age);
 };
@@ -21,18 +51,18 @@ class Person extends agedPerson {
       (Person.wolf = props.apple),
       (this.testWolf = Person.#wolf),
   
-      this.testjobob1 = function()  {
+      this.testjobob1 = () => {
   
-        l(`testjobob ${this.firstName} ${this.fla}`);
+        l(`testjobob ${this.firstName} ${this.state}`);
         l(this)
      
-      }.bind(this);
+      };
   }
 
 
-  testjobob2 = ()=>{
+  testjobob2(){
   
-    l(`testjobob ${this.firstName} ${this.fla}`);
+    l(`testjobob ${this.firstName} ${this.state}`);
     l(this)
     
   };

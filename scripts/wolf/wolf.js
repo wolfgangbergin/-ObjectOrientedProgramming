@@ -2,8 +2,16 @@
 // window.l = console.log;
 // l('Hello World3');
 // l(document);
-window.l = console.log;
+Window.prototype.l = console.log;
 window.__proto__.d = console.dir;
+
+Object.defineProperty(Window.prototype, 'l', {
+  
+    writable: 0,
+    enumerable: 0,
+    configurable: 0,
+});
+
 Object.defineProperty(Function.prototype, "wolfThis", {
     get: function wolfThis() {
        
@@ -39,3 +47,9 @@ Object.defineProperty(Function.prototype, "jobob", {
 Object.prototype.banana = 'banana919';
 Object.prototype.apple = 'apple919';
 Object.prototype.funcTest = ()=>'jojoj313';
+
+
+
+
+
+// l(obj)

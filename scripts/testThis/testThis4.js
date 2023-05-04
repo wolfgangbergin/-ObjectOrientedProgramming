@@ -1,7 +1,7 @@
 
 const testObj = {}
 
-let company = 'company212'
+const jojo = Object.create(testObj)
 
 testObj.testFunc = function(){
     l(this)
@@ -11,8 +11,8 @@ testObj.testFunc = function(){
  
     const wolfArrow = param1 => {
         l('wolfArrow')
-    l(` ${this.banana} and ${apple} and ${company} and ${business.bName}`);
-    l(this.name)
+    l(` ${jojo.banana} and ${apple} and ${business.bName}`);
+    l(jojo.name)
     };
    
     return wolfArrow
@@ -44,7 +44,7 @@ writable: 0,
 
 
 
-const jojo = Object.create(testObj)
+
 const max = Object.create(testObj)
 
 
@@ -57,10 +57,11 @@ max.banana = 'banana515max'
 
 
 
-let temp = jojo.testFunc
+// let temp = max.testFunc()
+//  temp()
 
 
-temp.bind(jojo)()()
+
 
 const scripting = 'scipts';
 

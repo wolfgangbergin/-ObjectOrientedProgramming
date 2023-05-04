@@ -4,36 +4,32 @@ class Employee extends Person{
     constructor(props){
         super(props)
         this.pay = props.pay
+       
+    }
+    testWolfAAA(){
+        l('jhgkj')
     }
 }
 
 
 
 
-const maxbob = new Employee({firstName: 'maxbob212', pay: 15, apple: 'maxbob212', age: 48})
 
 
 
+const maxbob = new Employee({firstName: 'maxbob212', pay: 15, apple: 'maxbob212', age: 48, phoneNumber: '313-255-7103', state: 'fla'});
+const kimbob = new Employee({firstName: 'kimbob', pay: 15, apple: 'maxbob212', age: 22, phoneNumber: '313-255-7103', state: 'mich'});
 
 
- const pp2 = new maxbob.__proto__.constructor({firstName: 'pp2', pay: 15, apple: 'ppp2', age: 18})
+// for (const key in maxbob.__proto__){
+//     l(key)
+// }
+
+//  d( maxbob.__proto__.__proto__.__proto__.__proto__.__proto__)
+// d(maxbob)
 
 
-
- //d(maxbob)
- 
-
-
-
- const pp3 = { fla: "fla"}
-  pp3.testjobob1 = maxbob.testjobob1
-  pp3.testjobob2 = maxbob.testjobob2
-  
-// pp3.testjobob1()
-//   pp3.testjobob2()
-
- 
-const scripting = 'scripting'
+ const scripting = 'scripting'
 
 
 
