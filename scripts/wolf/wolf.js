@@ -45,7 +45,9 @@ Object.defineProperty(Function.prototype, "jobob", {
 
 
 Object.prototype.banana = 'banana919';
-Object.prototype.apple = 'apple919';
+
+
+
 Object.prototype.funcTest = ()=>'jojoj313';
 
 

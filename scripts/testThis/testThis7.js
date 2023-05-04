@@ -1,21 +1,6 @@
 
 
 
-//temp
-
-
-
-class WolfArr extends Array{
-    constructor(param1, ...props){
-       
-        super(...props)
- this.kimTest = param1
-
-    }
-   wolfMeth(){
-    l(this)
-   }
-}
 
 
 
@@ -23,13 +8,16 @@ class WolfArr extends Array{
 
 
 
+// function JojoSet(props){
+//     this.temp = new Set(props.set)
+//     this.entries = [...this.temp.entries()]
+//  this.name = props.name    
+// }
 
-const arr = new WolfArr('banana',1,2,3,4,5,6,7,8,9,10)
 
+// const jojo = new JojoSet({name: 'jojo', set: [1,2,3,]})
 
-d(arr)
-
-arr.wolfMeth()
+// d(jojo)
 
 
 
