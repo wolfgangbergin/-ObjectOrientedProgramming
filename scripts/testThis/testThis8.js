@@ -31,10 +31,10 @@ class WolfSet extends Set{
  
  
  
-//  l(set.kimTest)
+d(WolfSet.prototype.__proto__ === Set.prototype)
  
-//  d(set.__proto__ === WolfSet.prototype)
-//  l(`///////////////////////////////////////////////`)
+ d(set.__proto__.__proto__ === Set.prototype)
+ l(`///////////////////////////////////////////////`)
  const scripting = 'scripting'
 
 

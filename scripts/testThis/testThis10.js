@@ -33,15 +33,12 @@ Object.defineProperty(protoObj, 'banana', {
 
 
 
- const jobob = Object.create(protoObj)
+//  const jobob = Object.create(protoObj)
 
 
- jobob.wolfInitSet([1,2,3,3])
+//  jobob.wolfInitSet([1,2,3,3])
 
- d(jobob)
-
-
-
+//  d(jobob)
 
 
 
@@ -50,7 +47,10 @@ Object.defineProperty(protoObj, 'banana', {
 
 
 
-d(jobob.testWolf() )
+
+
+
+// d(jobob.testWolf() )
 
 const scripting = 'scripting'
 
